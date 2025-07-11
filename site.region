@@ -163,7 +163,7 @@
 </div>
 
 <squarespace:script src="site.js" combo="true" />
-<squarespace:script src="hundt.js" combo="true" />
+<squarespace:script src="hundt.js" combo="false" />
 {squarespace-footers}
 
 </body>
