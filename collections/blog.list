@@ -17,7 +17,21 @@
 {.repeated section items}
 
 <article class="{@|item-classes}" id="article-{id}" data-item-id="{id}">
-
+<!--FEATURED IMAGE-->
+  {.section assetUrl}
+    <div class="featured-image">
+      <a href="{fullUrl}">
+        <img src="{assetUrl}?format=750w" 
+             alt="{title}" 
+             srcset="{assetUrl}?format=300w 300w, 
+                     {assetUrl}?format=500w 500w, 
+                     {assetUrl}?format=750w 750w, 
+                     {assetUrl}?format=1000w 1000w"
+             sizes="(max-width: 640px) 100vw, 50vw">
+      </a>
+    </div>
+  {.end}
+  
   <!--POST BODY-->
 
   <h1 data-content-field="title" class="entry-title">
