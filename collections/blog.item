@@ -2,20 +2,20 @@
 
 {.section item}
 <style>
-  {.section customContent.backgroundedBlogPost.backgroundColor}
+  {.section customContent.backgroundColor}
   /* Target different containers as needed */
   body {
-    background-color: {backgroundColor} !important;
+    background-color: #{backgroundColor} !important;
   }
   
   /* OR target a specific wrapper */
   .site-wrapper {
-    background-color: {backgroundColor} !important;
+    background-color: #{backgroundColor} !important;
   }
   
   /* OR target just the content area */
   #content {
-    background-color: {backgroundColor} !important;
+    background-color: #{backgroundColor} !important;
   }
   {.end}
 </style>
