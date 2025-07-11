@@ -5,7 +5,7 @@
   {.section customContent.backgroundColor}
   /* Target different containers as needed */
   body {
-    background-color: #{backgroundColor} !important;
+    background-color: #{customContent.backgroundColor} !important;
   }
   
   /* OR target a specific wrapper */
