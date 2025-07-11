@@ -1,6 +1,32 @@
 body:not(.sqs-edit-mode),
 .collection-type-blog.sidebar-position-right:not(.sqs-edit-mode),
 .collection-type-blog.sidebar-position-left:not(.sqs-edit-mode) {
+  #canvasWrapper .pageWrapper {
+    max-width: none;
+  }
+  #mainContent {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    @media (max-width: 1024px) {
+      flex-direction: column;
+      padding-right: 0;
+    }
+    .blog-header-region {
+      width: 40%;
+    }
+    .summary-metadata-container {
+      display: none;
+    }
+  }
+  #mainContent > .sqs-layout {
+    width: 58%;
+    margin-top: 20px;
+    @media (max-width: 1024px) {
+      width: 100%;
+    }
+  }
 }
 body.page-information {
   #mainContent {
