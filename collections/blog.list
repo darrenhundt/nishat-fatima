@@ -31,7 +31,8 @@
       </a>
     </div>
   {.end}
-  
+
+    <p class="date">/&nbsp;<time class="published" datetime="{addedOn|date %F}">{addedOn|date %B %e, %Y}</time></p>
   <!--POST BODY-->
 
   <h1 data-content-field="title" class="entry-title">
@@ -40,8 +41,6 @@
     {.or}
       <a href="{fullUrl}">{title}</a>
     {.end}
-    <span class="date">/&nbsp;<time class="published" datetime="{addedOn|date %F}">{addedOn|date %B %e, %Y}</time></span>
-    <span class="author">by <a href="?author={author.id}">{author.displayName}</a></span>
   </h1>
 
   {.excerpt?}
