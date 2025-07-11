@@ -109,9 +109,12 @@
 
           {.section collection}
           {.collectionTypeNameEquals? blog}
+          <!-- don't need sidebar -->
+          <!--
           <aside id="sidebarWrapper"><div id="sidebar">
             <squarespace:block-field id="sidebarBlocks" label="Sidebar Content" />
           </div></aside>
+          -->
           {.end}
           {.end}
         </section>
