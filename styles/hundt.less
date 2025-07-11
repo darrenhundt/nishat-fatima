@@ -9,6 +9,9 @@ body:not(.sqs-edit-mode),
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    @media (max-width: 1024px) {
+      flex-direction: column;
+    }
     .blog-header-region {
       width: 40%;
     }
@@ -17,6 +20,9 @@ body:not(.sqs-edit-mode),
     }
     article {
       width: 58%;
+      @media (max-width: 1024px) {
+        width: 100%;
+      }
       .entry-title.item-entry-title {
         display: none;
       }
