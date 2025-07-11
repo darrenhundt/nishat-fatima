@@ -1,5 +1,6 @@
   <!-- BLOG HEADER REGION -->
   <div class="blog-header-region">
+  <h1>blog header</h1>
     <squarespace:block-field id="header-blog" columns="12" />
   </div>
 
