@@ -1,3 +1,8 @@
+  <!-- BLOG HEADER REGION -->
+  <div class="blog-header-region">
+    <squarespace:block-field id="header-blog" columns="12" />
+  </div>
+
 {.section item}
 
 <article class="{@|item-classes}" id="article-{id}" data-item-id="{id}">
