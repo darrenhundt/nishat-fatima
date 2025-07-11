@@ -1,6 +1,24 @@
 
 
 {.section item}
+<style>
+  {.section customContent.backgroundedBlogPost.backgroundColor}
+  /* Target different containers as needed */
+  body {
+    background-color: {backgroundColor} !important;
+  }
+  
+  /* OR target a specific wrapper */
+  .site-wrapper {
+    background-color: {backgroundColor} !important;
+  }
+  
+  /* OR target just the content area */
+  #content {
+    background-color: {backgroundColor} !important;
+  }
+  {.end}
+</style>
 
 <article class="{@|item-classes}" id="article-{id}" data-item-id="{id}">
 
