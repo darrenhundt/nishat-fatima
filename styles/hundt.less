@@ -1,61 +1,6 @@
 body:not(.sqs-edit-mode),
 .collection-type-blog.sidebar-position-right:not(.sqs-edit-mode),
 .collection-type-blog.sidebar-position-left:not(.sqs-edit-mode) {
-  #canvasWrapper .pageWrapper {
-    max-width: none;
-  }
-  #mainContent {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    @media (max-width: 1024px) {
-      flex-direction: column;
-      padding-right: 0;
-    }
-    .blog-header-region {
-      width: 40%;
-    }
-    .summary-metadata-container {
-      display: none;
-    }
-    article {
-      width: 58%;
-      @media (max-width: 1024px) {
-        width: 100%;
-      }
-      .entry-title.item-entry-title {
-        display: none;
-      }
-    }
-    .blog-header-region {
-      .sqs-block .summary-title a, 
-      .sqs-block a:visited {
-        text-decoration: none;
-        font-weight: bold;
-        text-transform: uppercase;
-        font-size: 16px;
-        line-height: 128%;
-      }
-      h1.entry-title {
-        position: fixed;
-        bottom: 0;
-        left: 10px;
-        z-index: 999;
-        font-size: 99px;
-        @media (max-width: 1024px) {
-          font-size: 5vw;
-        }
-    }
-    }
-  }
-  #mainContent > .sqs-layout {
-    width: 58%;
-    margin-top: 20px;
-    @media (max-width: 1024px) {
-      width: 100%;
-    }
-  }
 }
 body.page-information {
   #mainContent {
