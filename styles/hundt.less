@@ -19,6 +19,15 @@ body:not(.sqs-edit-mode),
     .summary-metadata-container {
       display: none;
     }
+    article {
+      width: 58%;
+      @media (max-width: 1024px) {
+        width: 100%;
+      }
+      .entry-title.item-entry-title {
+        display: none;
+      }
+    }
     .blog-header-region {
       .sqs-block .summary-title a, 
       .sqs-block a:visited {
