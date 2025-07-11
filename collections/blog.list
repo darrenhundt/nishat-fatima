@@ -1,3 +1,14 @@
+
+<!-- SIMPLE BLOG TITLES LIST -->
+<div class="blog-titles-list">
+  <h2>All Posts</h2>
+  <ul>
+    {.repeated section items}
+      <li><a href="{fullUrl}">{title}</a></li>
+    {.end}
+  </ul>
+</div>
+
 {.section categoryFilter}
 <p class="active-filter category-filter"><span class="active-filter-label"><strong>{@|safe}</strong></span></p>
 {.end}
