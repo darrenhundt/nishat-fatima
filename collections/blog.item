@@ -1,15 +1,4 @@
-  <!-- BLOG HEADER REGION -->
-<div class="blog-header-region">
-  <squarespace:block-field id="header-blog" columns="12" />
-  {.section item}
-    <!-- ARTICLE TITLE AT BOTTOM OF HEADER REGION -->
-    <h1 data-content-field="title" class="entry-title">{title}</h1>
-  {.end}
 
-  <div id="sideNav">
-    <squarespace:navigation navigationId="sidebarNav" template="navigation" />
-  </div>
-</div>
 
 {.section item}
 
