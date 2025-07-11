@@ -32,7 +32,7 @@
     </div>
   {.end}
 
-    <p class="date">/&nbsp;<time class="published" datetime="{addedOn|date %F}">{addedOn|date %B %e, %Y}</time></p>
+    <p class="date"><time class="published" datetime="{addedOn|date %F}">{addedOn|date %m.%d.%Y}</time></p>
   <!--POST BODY-->
 
   <h1 data-content-field="title" class="entry-title">
