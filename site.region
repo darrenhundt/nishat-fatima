@@ -148,7 +148,22 @@
     </div>
   </div>
 
+<!-- Lightbox HTML - add this before closing </body> tag -->
+<div class="custom-lightbox" id="customLightbox">
+  <button class="lightbox-close" id="lightboxClose">&times;</button>
+  <button class="lightbox-nav lightbox-prev" id="lightboxPrev">&#8249;</button>
+  <button class="lightbox-nav lightbox-next" id="lightboxNext">&#8250;</button>
+  
+  <div class="lightbox-content">
+    <div class="lightbox-loading" id="lightboxLoading"></div>
+    <img class="lightbox-image" id="lightboxImage" alt="">
+  </div>
+  
+  <div class="lightbox-counter" id="lightboxCounter">1 / 1</div>
+</div>
+
 <squarespace:script src="site.js" combo="true" />
+<squarespace:script src="hundt.js" combo="true" />
 {squarespace-footers}
 
 </body>
