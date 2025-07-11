@@ -11,7 +11,7 @@
 
   <!--POST BODY-->
 
-  <h1 data-content-field="title" class="entry-title">
+  <h1 data-content-field="title" class="entry-title item-entry-title">
     {.passthrough?}
       <a href="{sourceUrl}">{title}</a>
     {.or}
