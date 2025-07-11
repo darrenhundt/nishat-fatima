@@ -30,7 +30,7 @@
   </div>
 
   <!--POST FOOTER-->
-
+<!-- hiding footer
   <footer>
     <div class="meta">
       <div class="grouping">
@@ -53,9 +53,8 @@
       </div>
     </div>
   {postItemInjectCode}
-
   </footer>
-
+-->
   <!-- COMMENTS -->
 
   <section id="comments-{id}" class="comments-wrapper">
