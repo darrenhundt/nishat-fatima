@@ -3,15 +3,7 @@
     <squarespace:block-field id="header-blog" columns="12" />
       {.section item}
   <!-- ARTICLE TITLE AT BOTTOM OF HEADER REGION -->
-  <h1 data-content-field="title" class="entry-title">
-    {.passthrough?}
-      <a href="{sourceUrl}">{title}</a>
-    {.or}
-      <a href="{fullUrl}">{title}</a>
-    {.end}
-    <span class="date">/<time class="published" datetime="{addedOn|date %F}">{addedOn|date %B %e, %Y}</time></span>    
-    <span class="author">by <a href="{collection.fullUrl}?author={author.id}">{author.displayName}</a></span>
-  </h1>
+  <h1 data-content-field="title" class="entry-title">{title}</h1>
   {.end}
   </div>
 
