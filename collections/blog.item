@@ -54,12 +54,8 @@
     </div>
   {postItemInjectCode}
   </footer>
--->
-  <!-- COMMENTS -->
+-->OMMENTS -->
 
-  <section id="comments-{id}" class="comments-wrapper">
-    {@|comments}
-  </section>
 
 
   </article>
@@ -67,7 +63,7 @@
 
 
 <!--PAGINATION-->
-
+<!-- hide pagination 
 {.section pagination}
   <nav class="pagination clear">
     {.section prevItem}
@@ -78,5 +74,5 @@
     {.end}
   </nav>
 {.end}
-
+ -->
 
