@@ -14,13 +14,13 @@ body:not(.sqs-edit-mode),
       padding-right: 0;
     }
     .blog-header-region {
-      width: 40%;
+      width: 30%;
     }
     .summary-metadata-container {
       display: none;
     }
     article {
-      width: 58%;
+      width: 68%;
       @media (max-width: 1024px) {
         width: 100%!important;
       }
@@ -29,6 +29,9 @@ body:not(.sqs-edit-mode),
       }
     }
     .blog-header-region {
+      .sqs-gallery-design-autocolumns-slide {
+        max-width: 100%;
+      }
       .sqs-block .summary-title a, 
       .sqs-block a:visited {
         text-decoration: none;
@@ -42,7 +45,7 @@ body:not(.sqs-edit-mode),
         bottom: 0;
         left: 10px;
         z-index: 999;
-        font-size: 99px;
+        font-size: 75px;
         @media (max-width: 1024px) {
           font-size: 5vw;
         }
