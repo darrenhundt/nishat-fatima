@@ -44,7 +44,7 @@
             {.section siteTagLine}
               <h2 class="logo-subtitle">{@}</h2>
             {.end}
-            </div>
+            </div><!-- #logo end -->
 
             <span class="ctrl-button menu"><a class="icon-hamburger"></a></span>
 
@@ -55,8 +55,8 @@
                 {@|apply sqs-social-links}
               </div>
               {.end}
-            </div>
-        </div>
+            </div><!-- #topNav end -->
+        </div><!-- #header end -->
         </header>
         {.end}
 
@@ -81,7 +81,7 @@
             {.end}
           </nav>
         {.end}
-      </div>
+      </div><!-- #headerWrapper end -->
 
       <div class="pageWrapper">
         <section id="page">
@@ -97,8 +97,8 @@
 
   <div id="sideNav">
     <squarespace:navigation navigationId="sidebarNav" template="navigation" />
-  </div>
-</div>
+  </div><!-- #sideNav end -->
+</div><!-- .blog-header-region end -->
 
             {.section collection}{.equal? typeName "products"}{.section categories}
             <div id="categoryNav">
@@ -112,13 +112,13 @@
                   <li{.equal? categoryFilter @} class="active-link"{.end}><a href="{fullUrl}?category={@|url-encode}">{@}</a></li>
                   {.end}
                 </ul>
-              </nav>
-            </div>
+              </nav><!-- .category-nav end -->
+            </div><!-- #categoryNav end -->
             {.end}{.end}{.end}
 
             {squarespace.main-content}
 
-          </div>
+          </div><!-- #mainContent end -->
 
           {.section collection}
           {.collectionTypeNameEquals? blog}
@@ -130,7 +130,7 @@
           -->
           {.end}
           {.end}
-        </section>
+        </section><!-- #page end -->
 
         {.section collection}
         {.collectionTypeNameEquals? index}
@@ -144,9 +144,9 @@
         {.end}
         {.end}
         {.end}
-      </div>
-    </div>
-  </div>
+      </div><!-- .pageWrapper end -->
+    </div><!-- #canvas end -->
+  </div><!-- #canvasWrapper end -->
 
 <!-- Lightbox HTML - add this before closing </body> tag -->
 <div class="custom-lightbox" id="customLightbox">
@@ -155,12 +155,12 @@
   <button class="lightbox-nav lightbox-next" id="lightboxNext">&#8250;</button>
   
   <div class="lightbox-content" id="lightboxContent">
-    <div class="lightbox-loading" id="lightboxLoading"></div>
+    <div class="lightbox-loading" id="lightboxLoading"></div><!-- #lightboxLoading end -->
     <img class="lightbox-image" id="lightboxImage" alt="">
-  </div>
+  </div><!-- #lightboxContent end -->
   
-  <div class="lightbox-counter" id="lightboxCounter">1 / 1</div>
-</div>
+  <div class="lightbox-counter" id="lightboxCounter">1 / 1</div><!-- #lightboxCounter end -->
+</div><!-- #customLightbox end -->
 
 <squarespace:script src="site.js" combo="true" />
 <squarespace:script src="hundt.js" combo="false" />
