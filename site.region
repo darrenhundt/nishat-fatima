@@ -12,9 +12,9 @@
   <body id="{squarespace.page-id}" class="{squarespace.page-classes} page-{collection.urlId}{.if template.mobileStylesEnabled}{.or} no-mobile-styles{.end}">
     <div class="sqs-announcement-bar-dropzone"></div><!--Fixes index page loading issue when announcement bar is enabled -->
 
-  <div id="canvasWrapper">
-    <!-- NEW LEFT SIDEBAR -->
-<div id="leftSidebar">
+
+<!-- NEW FULL-WIDTH HEADER -->
+<div id="fullWidthHeader">
   {.section website}
     <div id="logo" data-content-field="site-title">
       {.if logoImageUrl}
@@ -36,19 +36,27 @@
         <h2 class="logo-subtitle">{@}</h2>
       {.end}
     </div><!-- #logo end -->
-                <div id="topNav">
-                  <squarespace:navigation navigationId="mainNav" template="navigation" />
-                  {.if socialAccounts}
-                    <div id="sqs-social" class="social-links sqs-svg-icon--list" data-content-field="connected-accounts">
-                      {@|apply sqs-social-links}
-                    </div>
-                  {.end}
-                </div><!-- #topNav end -->
-                <div id="sideNav">
-                  <squarespace:navigation navigationId="sidebarNav" template="navigation" />
-                </div><!-- #sideNav end -->
   {.end}
-</div><!-- #leftSidebar end -->
+</div><!-- #fullWidthHeader end -->
+
+<div id="canvasWrapper">
+  <!-- NEW LEFT SIDEBAR -->
+  <div id="leftSidebar">
+    {.section website}
+      <!-- Just navigation content now, no logo -->
+      <div id="topNav">
+        <squarespace:navigation navigationId="mainNav" template="navigation" />
+        {.if socialAccounts}
+          <div id="sqs-social" class="social-links sqs-svg-icon--list" data-content-field="connected-accounts">
+            {@|apply sqs-social-links}
+          </div>
+        {.end}
+      </div><!-- #topNav end -->
+      <div id="sideNav">
+        <squarespace:navigation navigationId="sidebarNav" template="navigation" />
+      </div><!-- #sideNav end -->
+    {.end}
+  </div><!-- #leftSidebar end -->
     
     <!-- MAIN CONTENT WRAPPER -->
     <div id="mainWrapper">
