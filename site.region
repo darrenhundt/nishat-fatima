@@ -52,8 +52,7 @@
           </div>
         {.end}
       </div><!-- #topNav end -->
-
-
+      
               <!-- Left Sidebar REGION -->
               <div class="blog-header-region">
                 <squarespace:block-field id="header-blog" columns="12" />
@@ -62,7 +61,6 @@
                   <h1 data-content-field="title" class="entry-title">{title}</h1>
                 {.end}
               </div><!-- .blog-header-region end -->
-
               
       <div id="sideNav">
         <squarespace:navigation navigationId="sidebarNav" template="navigation" />
@@ -104,14 +102,8 @@
         <div class="pageWrapper">
           <section id="page">
             <div id="mainContent" role="main" data-content-field="main-content">
-              <!-- Left Sidebar REGION -->
-              <div class="blog-header-region">
-                <squarespace:block-field id="header-blog" columns="12" />
-                {.section item}
-                  <!-- ARTICLE TITLE AT BOTTOM OF HEADER REGION -->
-                  <h1 data-content-field="title" class="entry-title">{title}</h1>
-                {.end}
-              </div><!-- .blog-header-region end -->
+<!-- removed the left sidebar links and moved them to left nav sidebar-->
+
               {.section collection}{.equal? typeName "products"}{.section categories}
                 <div id="categoryNav">
                   <input type="checkbox" name="category-nav-toggle" id="categoryNavToggle" class="category-nav-toggle hidden" />
